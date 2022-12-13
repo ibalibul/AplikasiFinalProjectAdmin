@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragmentt">
+
+    <fragment
+        android:id="@+id/homeFragmentt"
+        android:name="com.iqbal.aplikasifinalprojectadmin.HomeFragmentt"
+        android:label="fragment_home_fragmentt"
+        tools:layout="@layout/fragment_home_fragmentt" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" />
+    <fragment
+        android:id="@+id/tambahTiketFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.TambahTiketFragment"
+        android:label="fragment_tambah_tiket"
+        tools:layout="@layout/fragment_tambah_tiket" />
+    <fragment
+        android:id="@+id/detailTiketFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.DetailTiketFragment"
+        android:label="fragment_detail_tiket"
+        tools:layout="@layout/fragment_detail_tiket" />
+</navigation>

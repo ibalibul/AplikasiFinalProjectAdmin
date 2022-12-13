@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragmentt">
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:text="Home"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/txtHeloAdmin"
+        android:text="Hello, Admin"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeloAdmin"
+        android:layout_marginTop="1dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_view_bg"
+        app:queryHint="Search..."
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/txtlist"
+        android:layout_below="@+id/search_view"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/oren"
+        android:layout_marginLeft="15dp"
+        android:text="List Tiket"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Oneway"
+        android:textAllCaps="false"
+        android:layout_below="@+id/search_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@color/abuabu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Roundtrip"
+        android:layout_below="@id/search_view"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/abuabu"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/txtlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
