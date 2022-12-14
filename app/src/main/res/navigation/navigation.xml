@@ -40,4 +40,9 @@
         android:name="com.iqbal.aplikasifinalprojectadmin.DetailTiketFragment"
         android:label="fragment_detail_tiket"
         tools:layout="@layout/fragment_detail_tiket" />
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="com.iqbal.aplikasifinalprojectadmin.CustomerFragment"
+        android:label="fragment_customer"
+        tools:layout="@layout/fragment_customer" />
 </navigation>
